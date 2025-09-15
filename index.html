@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ditzy Generator v2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Musik Latar -->
+  <audio id="bgMusic" autoplay loop>
+  <source src="Juicy%20Luicy%20-%20Lantas%20(Official%20Lyric%20Video)%20-%20Emotion%20Entertainment.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle">🔊 Pause Music</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="brand">
+      <h1>✨ Ditzy Generator v2</h1>
+    </div>
+    <div class="header-actions">
+      <a href="https://t.me/ariks_ta" target="_blank" class="visitBtn">
+        🔗 Kunjungi Developer
+      </a>
+      <button id="themeToggle" class="iconBtn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="tools">
+      <h2>📝 Text Tools</h2>
+      <textarea id="inputText" placeholder="Tulis teks kamu di sini..."></textarea>
+      <div class="btn-group">
+        <button onclick="repeatText()">Repeat</button>
+        <button onclick="shuffleText()">Shuffle</button>
+        <button onclick="crazyText()">Crazy</button>
+        <button onclick="blankText()">Blank</button>
+        <button onclick="emojiText()">Emoji</button>
+      </div>
+      <div id="output"></div>
+    </section>
+
+    <section class="sticker">
+      <h2>🎨 Sticker Maker</h2>
+      <canvas id="stickerCanvas"></canvas>
+      <div class="btn-group">
+        <button onclick="makeSticker()">Buat Stiker</button>
+        <a id="downloadSticker" style="display:none;">⬇️ Download PNG</a>
+        <a id="downloadStickerWebp" style="display:none;">⬇️ Download WebP</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ditzy Generator. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
